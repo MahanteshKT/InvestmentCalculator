@@ -1,0 +1,20 @@
+.investHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleImg{
+    width: 5rem;
+    height: 5rem;
+}
+
+.title{
+    color: rgb(22, 120, 0);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 2px green,
+                 0 0 1px grey;
+}

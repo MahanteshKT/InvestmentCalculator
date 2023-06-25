@@ -1,0 +1,108 @@
+.formContainer{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(100px,1fr));
+    grid-template-rows: repeat(3,2fr);
+    margin: 1rem auto;
+    padding: 1rem;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.formInputEach{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+label{
+    color:white;
+    font-size:0.6rem;
+    font-weight: 600;
+}
+
+input{
+    margin-top: 0.2rem;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+    padding: 0.3rem;
+    font-size: 16px;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+input:hover,
+input:focus{
+    background-color:rgba(152, 153, 154,0.3);
+    border: 2px solid white;
+}
+
+.formButtons{ 
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+button{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    outline: none;
+    border-radius: 0.4rem;
+    margin: 0.5rem 0;
+}
+
+button:hover,button:focus{
+    background-color: rgba(99, 100, 100,0.4);
+}
+
+.ResetButton{
+    border: none;
+}
+
+.CalcButton{
+    border: 1px solid rgb(6, 28, 1);
+    background-color: rgb(5, 24, 1);
+    
+}
+
+.CalcButton:hover{
+    background-color: black;
+}
+
+.msg{
+    grid-column: 1/3;
+    text-align: center;
+
+}
+
+@media screen and (max-width:700px) {
+    .formButtons{
+        display: flex;
+        transition: 0.2s;
+        flex-direction: column;
+        gap: 0.1rem;
+
+    }
+    button{
+        width: 100%;
+    }
+    .formContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    
+
+}
